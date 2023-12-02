@@ -86,7 +86,7 @@ describe("AMMTest", function () {
 
     });
 
-    it("SWAP SHM TO TEST Token", async function (done) {
+    it("SWAP SHM TO TEST Token", async function () {
         await sleep(10000)
 
         const [owner] = await ethers.getSigners();
