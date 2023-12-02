@@ -1,0 +1,38 @@
+{
+  "name": "testing-framework",
+  "version": "1.0.0",
+  "licenses": [],
+  "license": "MIT",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "erc-test":"npx hardhat run scripts/erc-deploy.ts --network testingNetwork",
+    "amm-test":"npx hardhat run scripts/amm-runs.ts --network testingNetwork",
+    "rpc-test": "hardhat test --network testingNetwork test/RPC",
+    "test": "npm run rpc-test && npm run erc-test && npm run amm-test"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.9",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.1",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "chai": "^4.3.10",
+    "hardhat": "^2.19.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.3.2",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
