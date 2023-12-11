@@ -31,6 +31,6 @@ This commands for running tests above are for Shardeum Sphinx Validator network,
 
 1. In all tests commands, change it to:
 
-`RPC=https://dapps.shardeum.org` and remaining part as it is for each respective test.
+`RPC=https://dapps.shardeum.org` and the remaining part as it is for each respective test.
 
 2. Make sure to have uniswap Router deployed on Dapps Network, and change the existing `ROUTER_ADDRESS` with the address of deployed router on dapps network.
